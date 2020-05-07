@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from main.views import register, get_token
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('register/', register),
+    path('get_token/', get_token),
 ]
